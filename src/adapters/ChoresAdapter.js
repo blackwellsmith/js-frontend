@@ -11,7 +11,7 @@ class ChoresAdapter {
         return fetch(this.baseUrl, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'content-type': 'application/json'
                 },
             body: JSON.stringify({ name: value[0], description: value[1] })
         }).then(res => res.json())
