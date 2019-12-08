@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <title>Daily Chores</title>
+</head>
+
+<body>
+    <div id="flexcontainer">
+      <div class="flexbox">
+        <h1>Do You Want More Chores? Add One Below</h1>
+          <div class="container">
+            <form id="new-chore-form">
+             name <input type="text" id="new-chore-name" >
+             description <input type="text" id="new-chore-description" >
+              <input type="submit" value="Save Chore">
+            </form>
+            <h2>These have not been finished yet but will be thank you very much!</h2>   
+            <ul id="chores-container">
+            </ul>
+        </div>
+      </div>
+    </div>
+    <script src="src/components/chores.js" ></script>
+    <script src="src/components/app.js" ></script>
+    <script src="src/components/chore.js" ></script>
+    <script src="src/adapters/ChoresAdapter.js" ></script>
+    <script src="src/index.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,36 @@
+html, body, h1, h2, h3, h4, h5, h6 {
+    font-family: Courier New, monospace;
+  }
+
+  h1, h2, h3, div, title { 
+      text-align: center;
+      color: white } 
+
+  #flexcontainer { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+ .flexbox {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:midnightblue}
+
+    #flexcontainer { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        }
+
+        body { background-color: black;
+             background-image: radial-gradient(rgb(39, 42, 44) 9px, transparent 10px),
+              repeating-radial-gradient(#001f3f 0, midnightblue 4px, transparent 5px, transparent 20px, midnightblue 21px, midnightblue 25px, transparent 26px, transparent 50px)
+              ; background-size: 30px 30px, 90px 90px; background-position: 0 0; }
+
+
+    //:rgb(18, 188, 197) {}         
