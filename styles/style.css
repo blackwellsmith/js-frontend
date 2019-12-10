@@ -1,10 +1,26 @@
 html, body, h1, h2, h3, h4, h5, h6 {
     font-family: Courier New, monospace;
   }
+  li {
+    margin: 16px
+  }
 
   h1, h2, h3, div, title { 
       text-align: center;
       color: white } 
+
+      ul {
+        position: relative;
+        list-style: none;
+        margin-left: 0;
+        padding-left: 1.2em;
+      }      
+
+    ul  li:before {
+        content: "✯";
+        position: absolute;
+        left: 0;
+      }   
 
   #flexcontainer { 
     display: flex;
@@ -12,6 +28,35 @@ html, body, h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     }
+   .editable {
+     border: 1px solid white;
+     padding: 20px;
+     background-color: rgb(18, 188, 197)
+   } 
+
+   #btn {
+    background: #eb94d0;
+    background-image: -webkit-linear-gradient(top,rgb(39, 42, 44), rgb(18, 188, 197));
+      background-image: -moz-linear-gradient(top,rgb(39, 42, 44), rgb(18, 188, 197));
+        background-image: -ms-linear-gradient(top,rgb(39, 42, 44), rgb(18, 188, 197)); 
+         background-image: -o-linear-gradient(top,rgb(39, 42, 44), rgb(18, 188, 197));  
+         background-image: linear-gradient(to bottom,rgb(39, 42, 44), rgb(18, 188, 197));
+         -webkit-border-radius: 28;  -moz-border-radius: 28;  border-radius: 28px;
+         text-shadow: 1px 1px 1px #9daef5;  
+         -webkit-box-shadow: 6px 5px 24px #001f3f;  
+         -moz-box-shadow: 6px 5px 24px #001f3f;  
+         box-shadow: 6px 5px 24px #001f3f;
+         font-family: Courier New;  color: #fafafa;  font-size: 20px;  padding: 10px;  text-decoration: none;}
+   #btn:hover{
+    background: rgb(18, 188, 197);
+    background-image: -webkit-linear-gradient(top, rgb(18, 188, 197), #001f3f); 
+     background-image: -moz-linear-gradient(top, rgb(18, 188, 197), #001f3f); 
+      background-image: -ms-linear-gradient(top, rgb(18, 188, 197), #001f3f); 
+       background-image: -o-linear-gradient(top, rgb(18, 188, 197), #001f3f); 
+        background-image: linear-gradient(to bottom, rgb(18, 188, 197), #001f3f);
+        text-decoration: none;
+      } 
+   
 
  .flexbox {    
     display: flex;

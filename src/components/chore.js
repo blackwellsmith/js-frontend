@@ -6,6 +6,9 @@ class Chore {
     } 
     
     renderLi() {
-        return `<li>${this.name} >>> ${this.description}</li>`
-    }
+        return `<li id='chores' data-id='${this.id}'>${this.name} >>> ${this.description} 
+        <button id='btn' data-id='${this.id}' type="button">remove chore when finished</button></li>`
+    }                                                                                          
 }
+
+//<input id="btn" data-id='${this.id}' type="button" value="remove when finished" onclick="changeClass(this.id);"/>
